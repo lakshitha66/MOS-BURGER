@@ -1,0 +1,182 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #212121; /* Dark gray text for contrast */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #00796b; /* Deep teal for a rich look */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size for impact */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #004d40; /* Darker teal for navigation */
+}
+
+nav ul li {
+    margin: 0 25px; /* Increased spacing for emphasis */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1f8e9; /* Light greenish text for contrast */
+    font-weight: 700; /* Bolder text for better visibility */
+    font-size: 1.2rem; /* Slightly larger font size */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth hover effects */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #c8e6c9; /* Soft green on hover */
+}
+
+main {
+    padding: 40px;
+}
+
+section {
+    background-color: #ffffff; /* Crisp white for sections */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.8rem; /* Larger font size for section headings */
+    border-bottom: 3px solid #00796b; /* Thicker border for emphasis */
+    padding-bottom: 12px;
+    color: #00796b; /* Matching section header color */
+}
+
+.menu-category {
+    margin-bottom: 30px;
+}
+
+.menu-category div {
+    border-bottom: 1px solid #b2dfdb; /* Light teal border */
+    padding: 20px 0;
+}
+
+.menu-category div:last-child {
+    border-bottom: none;
+}
+
+#order-form label,
+#customer-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600; /* Bolder font for labels */
+}
+
+#order-form input[type="text"],
+#order-form input[type="number"],
+#customer-form input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+    border: 1px solid #80cbc4; /* Light teal border */
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#order-form button,
+#customer-form button,
+#reports button {
+    background-color: #004d40; /* Dark teal for buttons */
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+#order-form button:hover,
+#customer-form button:hover,
+#reports button:hover {
+    background-color: #003d33; /* Even darker teal on hover */
+}
+
+#cart,
+#customer-list,
+#report-output ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart li,
+#customer-list li,
+#report-output ul li {
+    border-bottom: 1px solid #b2dfdb; /* Light teal border */
+    padding: 20px 0;
+}
+
+#cart li:last-child,
+#customer-list li:last-child,
+#report-output ul li:last-child {
+    border-bottom: none;
+}
+
+#total {
+    font-weight: 700; /* Bolder font for total amount */
+    font-size: 1.3em;
+    color: #004d40; /* Dark teal color for total amount */
+    margin-top: 12px;
+}
+
+footer {
+    background-color: #003d33; /* Darker teal for footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #order-form button,
+    #customer-form button,
+    #reports button {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
